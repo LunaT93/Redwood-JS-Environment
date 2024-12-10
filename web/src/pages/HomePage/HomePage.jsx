@@ -29,6 +29,11 @@ export default HomePage
 const Password = () => {
   const [isPasswordShowing, setIsPasswordShowing] = useState(false)
   console.log(isPasswordShowing)
+
+  const togglePassword = () => {
+    setIsPasswordShowing(!isPasswordShowing)
+  }
+
   return (
     <div>
       {isPasswordShowing ? (
@@ -37,6 +42,7 @@ const Password = () => {
         //otherwise! fun
         <input type="password" name="passwpord" />
       )}
+      <button onClick={togglePassword}>Toggle</button>
     </div>
   )
 }
