@@ -1,5 +1,8 @@
 // import { Link, routes } from '@redwoodjs/router'
+import React, { useState } from 'react'
+
 import { Metadata } from '@redwoodjs/web'
+//perhaps this should be import {useState} from @redwood yada yda.
 
 const HomePage = () => {
   return (
@@ -24,11 +27,18 @@ const HomePage = () => {
 export default HomePage
 
 const Password = () => {
+  const [isPasswordShowing, setIsPasswordShowing] = useState(false)
+  console.log(isPasswordShowing)
   return (
     <div>
-      <input type="password" name="passwpord" />
+      {isPasswordShowing ? (
+        <input type="text" name="password" />
+      ) : (
+        //otherwise! fun
+        <input type="password" name="passwpord" />
+      )}
     </div>
   )
 }
 
-//I don't know if I have to export PW
+//I don't know if I have to export PW. It seems I do not
