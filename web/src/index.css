@@ -1,0 +1,21 @@
+body {background-color: rgba(112, 166, 156, 1);}
+
+@font-face {
+  font-family: 'WITCHED';
+  src:  url('/fonts/WTICHED.woff2') format('woff2'),
+        url('/fonts/WITCHED.woff') format('woff'),
+        url('/fonts/WITCHED.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'WITCHED', san-serif;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 0.1em;
+  font-size: 64px;
+  padding-left: 40px;
+}
