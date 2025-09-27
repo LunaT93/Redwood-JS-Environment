@@ -2,13 +2,7 @@ import React from 'react'
 
 const ForestSign = () => {
   return (
-    <svg
-      width="1113"
-      height="589"
-      viewBox="0 0 1113 589"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 1113 589" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_d_22_61)">
         <path
           d="M2.26429 72.2162C-6.18656 34.2998 23.677 -1.29412 62.485 0.439966L960.14 40.5504C988.149 41.802 1011.41 62.5926 1015.78 90.2866L1075.73 469.795C1081.38 505.607 1053.71 538 1017.45 538H153.376C125.737 538 101.802 518.812 95.7896 491.835L2.26429 72.2162Z"

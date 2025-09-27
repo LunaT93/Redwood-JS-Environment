@@ -35,21 +35,40 @@ const HomePage = () => {
       <p>
         Find me in <code>./web/src/pages/HomePage/HomePage.jsx</code>
       </p>
-      <div className="Box">
-        <ForestSign />
+
+      <div className="forest-box">
+        <ForestSign className="forest-sign" />
+        <div className="forest-text">
+          <p>CALL ME FOR A FREE CONSULTATION </p>
+          <p>(971) 800-1494</p>
+        </div>
       </div>
 
       {/* Forest Sign: I'm WORKING! Fuck yes.  */}
-      <div className="Box">
-        <BackgroundPentagon />
-      </div>
+      <div className="PentagonBox">
+        <BackgroundPentagon className="pentagon-svg" />
 
-      <div className="Box">
-        <ReviewBox1 />
-      </div>
+        <div className="reviews">
+          <div className="review-card">
+            <ReviewBox1 className="review-image" />
+            <p>
+              "CASE DISMISSED!! Luna refused to bend and saw my case threw to
+              the end. All charges were dismissed. If you are looking for an
+              attorney who truly cares about her clients and who will go the
+              extra mile to fight for your rights... Luna Thomas is the attorney
+              you want fighting for you!!"
+            </p>
+          </div>
 
-      <div className="Box">
-        <ReviewBox2 />
+          <div className="review-card">
+            <ReviewBox2 className="review-image" />
+            <p>
+              "If you're facing serious legal issues, look no further! This is
+              the lawyer for you! I literally owe this woman my freedom! Thank
+              you SO much, Luna!"
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="Box">
