@@ -21,7 +21,17 @@ const HomePage = () => {
     <>
       <Metadata title="Home" description="Home page" />
 
-      <h1>theLegalBitch.com</h1>
+      {/* <div className="header-wrap">
+        <h1>
+          <span>theLegalBitch.com</span>
+        </h1>
+        <img src="/images/LegalBitch1.png" alt="Logo" className="logo" />
+      </div> */}
+
+      <h1>
+        <img src="/images/LegalBitchLogo.png" alt="logo" className="logo" />
+      </h1>
+
       <p>
         Find me in <code>./web/src/pages/HomePage/HomePage.jsx</code>
       </p>
@@ -61,6 +71,7 @@ const HomePage = () => {
       <div className="Box">
         <LegalBitch1 />
       </div>
+      {/* has weird background rn  */}
 
       {/*
            My default route is named `home`, link to me with:
