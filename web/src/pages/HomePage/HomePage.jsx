@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import { Metadata } from '@redwoodjs/web'
 //perhaps this should be import {useState} from @redwood yada yda.
 
+import { Link, routes } from '@redwoodjs/router'
+
 import 'src/index.css'
 
 import { BackgroundHexagon } from 'src/components/BackgroundHexagon'
@@ -37,18 +39,10 @@ const HomePage = () => {
           <img src="/images/LegalBitchLogo.png" alt="Your Logo" />
         </div>
         <ul className="nav-links">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/blog">WokeMindVirus Blog</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to={routes.about()}>About</Link></li>
+            <li><Link to={routes.blog()}>WokeMindVirus Blog</Link></li>
+            <li><Link to={routes.contact()}>Contact</Link></li>
         </ul>
       </nav>
 
