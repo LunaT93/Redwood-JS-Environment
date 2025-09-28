@@ -2,15 +2,26 @@ body {
   background-color: rgba(112, 166, 156, 1);
   margin: 0;
   padding: 0;
-  font: acme;
+  font-family: 'Acme', sans-serif;
+
+
 }
 
 
 @font-face {
   font-family: 'WITCHED';
-  src:  url('/fonts/WTICHED.woff2') format('woff2'),
+  src:  url('/fonts/WITCHED.woff2') format('woff2'),
         url('/fonts/WITCHED.woff') format('woff'),
         url('/fonts/WITCHED.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DESIGNERS';
+  src:  url('/fonts/DESIGNERS.ttf') format('truetype');
 
   font-weight: normal;
   font-style: normal;
@@ -50,14 +61,76 @@ h1 span {
   margin-left: 20px;
 }
 
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;        /* no background */
+  position: relative;             /* or fixed if you want it to stick */
+  z-index: 1000;                  /* keep it above other content */
+}
+
+.nav-logo img {
+  height: 300px;                   /* adjust as needed */
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;   /* 👈 force horizontal by default */
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* When the screen is narrow, stack links vertically and center them */
+@media (max-width: 1000px) {
+  .nav-links {
+    flex-direction: column;   /* stack one on top of the other */
+    align-items: center;      /* center horizontally */
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Acme', sans-serif; /* your global font */
+  font-size: 1.1rem;
+  color: white;                   /* or whatever fits your palette */
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #D8D5A4;                 /* highlight color on hover */
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;   /* center the whole block */
+  align-items: flex-start;   /* align tops */
+  gap: 2rem;                 /* space between, before overlap tweak */
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* This wraps the entire ForestSign and CallMe in one big, formatted div */
+
 .forest-box {
   position: relative;
-  max-width: 90%;
-  margin: 0 auto;
+  flex: 0 0 50%;
 }
 
 .forest-sign {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -68,8 +141,29 @@ h1 span {
   left: 10%;
   right: 10%;
   color: white;
-  font-size: 5vw;
+  font-size: 3vw;
   text-align: center;
+}
+
+.callme-box {
+  flex: 0 0 45%;             /* ~40% of screen */
+  position: relative;
+  margin-left: -10%;
+  margin-top: -3%;          /* negative margin to overlap ForestSign */
+  z-index: 2;                /* ensure it sits above if needed */
+}
+
+.callme-pic {
+  width: 120%;
+  height: auto;
+  display: block;
+}
+
+.aboutMe{
+  margin: 10%;
+  font-family: 'Acme';
+  color: white;
+  font-size: 2vw;
 }
 
 .PentagonBox {
@@ -98,7 +192,7 @@ h1 span {
   justify-content: center;
   align-items: flex-start;  /* centers vertically */
   gap: 4rem;
-  padding-top: 8rem;         /* push them down below the dip */
+  padding-top: 7rem;         /* push them down below the dip */
   padding-left: 2rem;
   padding-right: 2rem;
   box-sizing: border-box;
@@ -109,6 +203,7 @@ h1 span {
   max-width: none;
   border-radius: 12px;
   padding: 1rem;
+  padding-top: 5rem;
   text-align: left;
   color: white;
 }
