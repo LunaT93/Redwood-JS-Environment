@@ -1,10 +1,9 @@
 // import { Link, routes } from '@redwoodjs/router'
 import React, { useState } from 'react'
 
+import { Link, routes } from '@redwoodjs/router'
 import { Metadata } from '@redwoodjs/web'
 //perhaps this should be import {useState} from @redwood yada yda.
-
-import { Link, routes } from '@redwoodjs/router'
 
 import 'src/index.css'
 
@@ -39,10 +38,18 @@ const HomePage = () => {
           <img src="/images/LegalBitchLogo.png" alt="Your Logo" />
         </div>
         <ul className="nav-links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to={routes.about()}>About</Link></li>
-            <li><Link to={routes.blog()}>WokeMindVirus Blog</Link></li>
-            <li><Link to={routes.contact()}>Contact</Link></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to={routes.about()}>About</Link>
+          </li>
+          <li>
+            <Link to={routes.blog()}>WokeMindVirus Blog</Link>
+          </li>
+          <li>
+            <Link to={routes.contact()}>Contact</Link>
+          </li>
         </ul>
       </nav>
 
@@ -101,7 +108,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="Box">
+      {/* <div className="Box">
         <ProtesterDefense />
       </div>
 
@@ -111,15 +118,15 @@ const HomePage = () => {
 
       <div className="Box">
         <Elaw />
-      </div>
+      </div> */}
 
       <div className="Box">
         <BackgroundHexagon />
       </div>
 
-      <div className="Box">
+      {/* <div className="Box">
         <LegalBitch1 />
-      </div>
+      </div> */}
       {/* has weird background rn  */}
 
       {/*
