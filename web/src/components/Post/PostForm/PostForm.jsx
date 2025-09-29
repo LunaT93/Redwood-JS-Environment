@@ -1,3 +1,5 @@
+import humanize from 'humanize-string'
+
 import {
   Form,
   FormError,
@@ -5,6 +7,7 @@ import {
   Label,
   TextField,
   Submit,
+  TextAreaField,
 } from '@redwoodjs/forms'
 
 const PostForm = (props) => {
@@ -48,7 +51,7 @@ const PostForm = (props) => {
           Body
         </Label>
 
-        <TextField
+        <TextAreaField
           name="body"
           defaultValue={props.post?.body}
           className="rw-input"

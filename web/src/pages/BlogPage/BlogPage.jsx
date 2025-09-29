@@ -8,6 +8,8 @@ import { useQuery, gql } from '@redwoodjs/web'
 
 import 'src/index.css'
 
+import 'src/scaffold.css'
+
 const POSTS_QUERY = gql`
   query PostsQuery {
     posts {
@@ -48,15 +50,40 @@ const BlogPage = () => {
       </nav>
 
       <div>
-        <h1>WokeMindVirus Blog</h1>
-        {data.posts.map((post) => (
-          <article key={post.id}>
-            <h2>{post.title}</h2>
-            <p>{post.body}</p>
-            <small>{new Date(post.createdAt).toLocaleDateString()}</small>
-          </article>
-        ))}
-      </div>
+
+  <h1>WokeMindVirus Blog</h1>
+  <div className="blog-container">
+  {data.posts.map((post, index) => {
+    const colors = [
+      'var(--color-1)',
+      'var(--color-2)',
+      'var(--color-3)',
+      'var(--color-4)',
+    ]
+    const bgColor = colors[index % colors.length]
+
+    return (
+      <article
+        key={post.id}
+        style={{
+          backgroundColor: bgColor,
+          padding: '1.5rem',
+          borderRadius: '8px',
+          marginBottom: '1rem',
+          color: '#fff', // adjust for contrast
+        }}
+      >
+        <h2>{post.title}</h2>
+        {post.body.split(/\n\n/).map((para, i) => (
+  <p key={i}>{para}</p> //added functionality to create new paragraphs when I enter text.
+))}
+        <small>{new Date(post.createdAt).toLocaleDateString()}</small>
+      </article>
+    )
+  })}
+</div>
+</div>
+
     </>
   )
 }

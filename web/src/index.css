@@ -3,8 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Acme', sans-serif;
-
-
+  color: white;
 }
 
 
@@ -53,6 +52,11 @@ h1 span {
   background-position: 0px 0px;
   z-index: 0;
 } */
+
+.contactMe{
+  font-size: 2vw;
+  text-align: center;
+}
 
 .logo {
   width: 500px;

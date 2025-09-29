@@ -29,7 +29,19 @@ const ContactPage = () => {
         </ul>
       </nav>
 
-      <div>Contact Me!</div>
+      <div className="contactMe">
+        Contact Information:
+        <br />
+        Luna Thomas
+        <br />
+        (971) 800-1494
+        <br />
+        lunathomas@lunathomaslaw.com
+        <br />
+        520 SW 6th Ave.
+        <br />
+        Portland, OR 97204
+      </div>
     </>
   )
 }

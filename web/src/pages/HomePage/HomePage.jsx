@@ -73,11 +73,15 @@ const HomePage = () => {
 
       <div className="aboutMe">
         <p>
-          Hi. I’m Luna, the Legal Bitch. I run an LGBTQ+ friendly law firm in
-          Portland, Oregon primarily focused on criminal defense. I worked as a
-          public defender for several years in Hood River handling misdemeanor
-          and felony cases before *transitioning* to my current practice in
-          Multnomah County.
+          Hi! I’m Luna, the Legal Bitch. I run an LGBTQ+ friendly law firm in
+          Portland, Oregon primarily focused on criminal defense. I primarily
+          serve Multnomah County, but I handle Washington, Clackamas, and Hood
+          River County cases when I think it's a cause worthy of driving. I
+          handle cases on a sliding scale for BIPOC/LGBTQ+/Marginalized
+          communites, so ask me about that! It's worth noting that if you make
+          less than about $2,000 a month, you likely qualify for court-appointed
+          (or, as I like to call it, "socialist") counsel (which, who knows,
+          could be me anyway since I like to take conflict cases).
         </p>
       </div>
 
