@@ -4,6 +4,8 @@ body {
   padding: 0;
   font-family: 'Acme', sans-serif;
   color: white;
+  height: 100%;
+
 }
 
 
@@ -52,6 +54,20 @@ h1 span {
   background-position: 0px 0px;
   z-index: 0;
 } */
+
+h1 {
+  text-align: center;
+  font-size: 5vw
+}
+
+h2 {
+  font-size: 3.5vw;
+}
+
+p {
+  letter-spacing: 0.05em;
+  word-spacing: 0.3em
+}
 
 .contactMe{
   font-size: 2vw;
@@ -212,4 +228,49 @@ h1 span {
   color: white;
 }
 
+.staggered-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* space between cards */
+  max-width: 90%;
+  margin: 0 auto;
+}
 
+.staggered-card {
+  display: flex;
+  align-items: top;
+  gap: 2rem;
+}
+
+.staggered-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.staggered-card img {
+  width: 50vw;   /* adjust as needed */
+  height: auto;
+  flex-shrink: 0;
+}
+
+.card-text {
+  flex: 1;
+padding-top: 5rem
+}
+
+.card-text h2 {
+  margin: 0 0 0.5rem;
+}
+
+.card-text p {
+  margin: 0;
+}
+
+.page-footer {
+  position: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ffffffff;
+}

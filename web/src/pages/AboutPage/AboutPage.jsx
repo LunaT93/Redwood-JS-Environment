@@ -29,7 +29,12 @@ const AboutPage = () => {
         </ul>
       </nav>
 
-      <div>About me</div>
+      <div>
+        ABout
+      </div>
+
+
+
     </>
   )
 }

@@ -21,18 +21,15 @@ const HomePage = () => {
   return (
     <>
       <Metadata title="Home" description="Home page" />
-
       {/* <div className="header-wrap">
         <h1>
           <span>theLegalBitch.com</span>
         </h1>
         <img src="/images/LegalBitch1.png" alt="Logo" className="logo" />
       </div> */}
-
       {/* <h1>
         <img src="/images/LegalBitchLogo.png" alt="logo" className="logo" />
       </h1> */}
-
       <nav className="topnav">
         <div className="nav-logo">
           <img src="/images/LegalBitchLogo.png" alt="Your Logo" />
@@ -52,11 +49,9 @@ const HomePage = () => {
           </li>
         </ul>
       </nav>
-
       {/* <p>
         Find me in <code>./web/src/pages/HomePage/HomePage.jsx</code>
       </p> */}
-
       <div className="hero">
         <div className="forest-box">
           <ForestSign className="forest-sign" />
@@ -70,7 +65,6 @@ const HomePage = () => {
           <img src="/images/CallMe.png" alt="Call Me" className="callme-pic" />
         </div>
       </div>
-
       <div className="aboutMe">
         <p>
           Hi! I’m Luna, the Legal Bitch. I run an LGBTQ+ friendly law firm in
@@ -84,7 +78,6 @@ const HomePage = () => {
           could be me anyway since I like to take conflict cases).
         </p>
       </div>
-
       {/* Forest Sign: I'm WORKING! Fuck yes.  */}
       <div className="PentagonBox">
         <BackgroundPentagon className="pentagon-svg" />
@@ -112,27 +105,74 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* <div className="Box">
-        <ProtesterDefense />
+      <h1>Major Practice Areas:</h1>
+
+      <div className="staggered-container">
+        <div className="staggered-card">
+          <img src="/images/ProtesterDefense.png" alt="Protester Defense" />
+          <div className="card-text">
+            <h2>Protester Defense</h2>
+            <p>
+              These cases are why I'm in the business. Whether you're standing
+              up for the human rights of Palestinians or fighting to have Satan
+              back in our classrooms, I'd love to stand with you. I have taken
+              multiple protest cases from arraignment to dismissal in Portland
+              and would love to help you out.
+            </p>
+          </div>
+        </div>
+
+        <div className="staggered-card reverse">
+          <img src="/images/DuiiDefense.png" alt="DUII Defense" />
+          <div className="card-text">
+            <h2>DUII Defense</h2>
+            <p>
+              This is not to make light of drinking and driving, especially with
+              a Martini glass (think of the upholstry!). But don't you want a
+              lawyer who won't make you feel more stressed than you already do?
+              You may be innocent and, in any case, punitive justice, fines, nor
+              jail have been shown to benefit you or help society. I have
+              experience with dozens of DUII cases in Oregon including ones that
+              I've taken to trial and won. Let me be on DD on your case!
+            </p>
+          </div>
+        </div>
+
+        <div className="staggered-card">
+          <img src="/images/ELaw.png" alt="E Law" />
+          <div className="card-text">
+            <h2>Environmental Law and Other Areas</h2>
+            <p>
+              In addition to my criminal work, I also have a certification in
+              Environment and Natural Resources Law from Lewis & Clark Law
+              School. If you want some extra help on an environmental case, let
+              me know! I might be interested in doing it (even doing it for free
+              but don't quote me on that). I've also helped people get their
+              LLCs started, advised other attorneys in starting their firms, and
+              I built this website myself! I can be a bit of a Jacqueline of all
+              trades. Call me up and see if I'd be a good fit! Just no family
+              law, please. That bums me out.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="Box">
-        <DuiiDefense />
-      </div>
-
-      <div className="Box">
-        <Elaw />
-      </div> */}
-
-      <div className="Box">
+      <div style={{ height: '500px', overflow: 'hidden' }}>
         <BackgroundHexagon />
+      </div>
+
+      <div
+        className="page-footer"
+        style={{ backgroundColor: 'rgb(166, 200, 194)' }}
+      >
+        © 2025 Luna Thomas, LLC. Special thanks to Mischa Hof for providing the
+        rights to the “Witched” font.
       </div>
 
       {/* <div className="Box">
         <LegalBitch1 />
       </div> */}
       {/* has weird background rn  */}
-
       {/*
            My default route is named `home`, link to me with:
            `<Link to={routes.home()}>Home</Link>`
