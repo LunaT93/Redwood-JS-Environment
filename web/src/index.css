@@ -69,9 +69,32 @@ p {
   word-spacing: 0.3em
 }
 
+.phone-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+.phone-link:hover {
+  text-decoration: underline;
+}
+
+.email-link {
+  color: inherit;
+  text-decoration: none;
+}
+.email-link:hover {
+  text-decoration: underline;
+}
+
 .contactMe{
   font-size: 2vw;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contactMe {
+  font-size: 5vw;
+  }
 }
 
 .logo {
