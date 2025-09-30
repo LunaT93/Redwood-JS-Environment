@@ -4729,6 +4729,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@redwoodjs/cli-data-migrate@npm:8.8.1":
+  version: 8.8.1
+  resolution: "@redwoodjs/cli-data-migrate@npm:8.8.1"
+  dependencies:
+    "@redwoodjs/babel-config": "npm:8.8.1"
+    "@redwoodjs/project-config": "npm:8.8.1"
+    chalk: "npm:4.1.2"
+    dotenv-defaults: "npm:5.0.2"
+    execa: "npm:5.1.1"
+    fs-extra: "npm:11.2.0"
+    listr2: "npm:7.0.2"
+    terminal-link: "npm:2.1.1"
+    yargs: "npm:17.7.2"
+  bin:
+    up: ./dist/bin.js
+  checksum: 10c0/08fef0130e41c18de15e3c7195fd62e43d0a693056f4ca348a72cf80b1eb811fd57813e4fbb67511a044cd8dbe63d364e2a8ab7d98367c019ba6d1e51b372b9d
+  languageName: node
+  linkType: hard
+
 "@redwoodjs/cli-helpers@npm:8.8.1":
   version: 8.8.1
   resolution: "@redwoodjs/cli-helpers@npm:8.8.1"
@@ -15820,6 +15839,7 @@ __metadata:
     "@babel/core": "npm:^7.28.4"
     "@babel/parser": "npm:^7.28.4"
     "@babel/preset-env": "npm:^7.28.3"
+    "@redwoodjs/cli-data-migrate": "npm:8.8.1"
     "@redwoodjs/core": "npm:8.8.1"
     "@redwoodjs/project-config": "npm:8.8.1"
     react-router-dom: "npm:^7.9.3"
