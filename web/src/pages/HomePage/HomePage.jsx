@@ -57,7 +57,9 @@ const HomePage = () => {
           <ForestSign className="forest-sign" />
           <div className="forest-text">
             <p>CALL ME FOR A FREE CONSULTATION </p>
-            <p>(971) 800-1494</p>
+            <a href="tel:+19718001494" className="phone-link">
+              (971) 800-1494
+            </a>
           </div>
         </div>
 
@@ -71,11 +73,11 @@ const HomePage = () => {
           Portland, Oregon primarily focused on criminal defense. I primarily
           serve Multnomah County, but I handle Washington, Clackamas, and Hood
           River County cases when I think it's a cause worthy of driving. I
-          handle cases on a sliding scale for BIPOC/LGBTQ+/Marginalized
-          communites, so ask me about that! It's worth noting that if you make
-          less than about $2,000 a month, you likely qualify for court-appointed
-          (or, as I like to call it, "socialist") counsel (which, who knows,
-          could be me anyway since I like to take conflict cases).
+          handle cases on a sliding scale for low income people, so ask me about
+          that! It's worth noting that if you make less than about $2,000 a
+          month, you likely qualify for court-appointed (or, as I like to call
+          it, "socialist") counsel (which, who knows, could be me anyway since I
+          like to take conflict cases).
         </p>
       </div>
       {/* Forest Sign: I'm WORKING! Fuck yes.  */}

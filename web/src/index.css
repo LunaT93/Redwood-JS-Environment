@@ -69,9 +69,32 @@ p {
   word-spacing: 0.3em
 }
 
+.phone-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+.phone-link:hover {
+  text-decoration: underline;
+}
+
+.email-link {
+  color: inherit;
+  text-decoration: none;
+}
+.email-link:hover {
+  text-decoration: underline;
+}
+
 .contactMe{
   font-size: 2vw;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contactMe {
+  font-size: 5vw;
+  }
 }
 
 .logo {
@@ -117,6 +140,17 @@ p {
     width: 100%;
     margin-top: 1rem;
   }
+nav-logo {
+    flex: 1 1 100%;          /* logo takes full row */
+    text-align: center;      /* center it */
+    margin-bottom: 1rem;
+  }
+
+  .nav-logo img {
+    width: 100%;             /* stretch to container width */
+    height: auto;
+  }
+
 }
 
 
@@ -131,7 +165,6 @@ p {
 .nav-links a:hover {
   color: #D8D5A4;                 /* highlight color on hover */
 }
-
 
 .hero {
   display: flex;
@@ -179,11 +212,48 @@ p {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* center each block */
+    gap: 1rem;                /* smaller gap between them */
+  }
+
+  .forest-box {
+     flex: 0 0 auto;           /* let them size naturally */
+    margin: 0;                /* remove overlap margins */
+    width: 100%;
+  }
+  .callme-box {
+    position: relative;
+    margin-left: 7vw;
+  margin-top: -8rem; /* adjust this value until it looks right */
+  z-index: 2;                /* full width on mobile */
+  }
+
+  .callme-pic {
+    width: 100%;              /* scale to container */
+  }
+
+  .forest-text {
+    font-size: 5vw;           /* bump text size for small screens */
+  }
+}
+
 .aboutMe{
   margin: 10%;
   font-family: 'Acme';
   color: white;
   font-size: 2vw;
+}
+
+@media (max-width: 768px){
+  .aboutMe{
+  margin: 10%;
+  font-family: 'Acme';
+  color: white;
+  font-size: 5vw;
+}
 }
 
 .PentagonBox {
@@ -228,6 +298,56 @@ p {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .pentagon-svg {
+    position: absolute;
+    top: -9999px;   /* move it way above the viewport */
+    left: -9999px;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  /* this is a DISGUSTING solution, but because the pentagon-svg div is the highest div on the regular site, not displaying it also deletes my ReviewBox (the 5 star review things). So, I hid it way off screen lol. */
+
+  .PentagonBox {
+    position: relative;
+    background-color: #F1ADA0; /* your solid fallback */
+    min-height: 120vh;
+  }
+  /* someday fix this. The pink doesn't shrink enough.  */
+
+  .reviews {
+    font-size: 3vw;
+    position: absolute;
+  top: 0;          /* pin to top of PentagonBox */
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  }
+
+  .review-card {
+    padding: 0rem;
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
+  .review-image {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+  }
+}
+
+
+/* These boys down here are the Protester defense, duii etc. containers */
 .staggered-container {
   display: flex;
   flex-direction: column;
@@ -238,7 +358,7 @@ p {
 
 .staggered-card {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -263,6 +383,19 @@ padding-top: 5rem
 
 .card-text p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .staggered-card,
+  .staggered-card.reverse {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* center image + text */
+    text-align: center;       /* optional: center text */
+  }
+
+  .card-text {
+    padding-top: 1rem;        /* reduce the big gap */
+  }
 }
 
 .page-footer {

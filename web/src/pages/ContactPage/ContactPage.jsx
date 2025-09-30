@@ -34,9 +34,13 @@ const ContactPage = () => {
         <br />
         Luna Thomas
         <br />
-        (971) 800-1494
+        <a href="tel:+19718001494" className="phone-link">
+          (971) 800-1494
+        </a>
         <br />
-        lunathomas@lunathomaslaw.com
+        <a href="mailto:lunathomas@lunathomaslaw.com" className="email-link">
+          lunathomas@lunathomaslaw.com
+        </a>
         <br />
         520 SW 6th Ave.
         <br />
