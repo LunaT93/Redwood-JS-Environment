@@ -5,8 +5,9 @@
 // https://www.prisma.io/docs/orm/prisma-migrate
 
 datasource db {
-  provider   = "postgresql"
-  url        = env("DATABASE_URL")   // pooler for runtime
+  provider  = "postgresql"
+  url       = env("DATABASE_URL") // pooler for runtime
+  directUrl = env("DIRECT_URL")
 }
 
 generator client {
