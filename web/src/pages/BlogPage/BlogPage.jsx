@@ -84,6 +84,11 @@ const BlogPage = () => {
 </div>
 </div>
 
+<div className="page-footer">
+        © 2025 Luna Thomas, LLC. Special thanks to Mischa Hof for providing the
+        rights to the “Witched” font.
+      </div>
+
 
     </>
   )
