@@ -314,7 +314,7 @@ nav-logo {
   .PentagonBox {
     position: relative;
     background-color: #F1ADA0; /* your solid fallback */
-    min-height: 80vh;
+    min-height: 50vh;
   }
   /* someday fix this. The pink doesn't shrink enough.  */
 
