@@ -7,8 +7,6 @@ import { Metadata } from '@redwoodjs/web'
 
 import 'src/index.css'
 
-import { useQuery, gql } from '@redwoodjs/web'
-
 import { BackgroundHexagon } from 'src/components/BackgroundHexagon'
 import { BackgroundPentagon } from 'src/components/BackgroundPentagon'
 import { DuiiDefense } from 'src/components/DuiiDefense'
@@ -18,17 +16,6 @@ import { LegalBitch1 } from 'src/components/LegalBitch1'
 import { ProtesterDefense } from 'src/components/ProtesterDefense'
 import { ReviewBox1 } from 'src/components/ReviewBox1'
 import { ReviewBox2 } from 'src/components/ReviewBox2'
-
-// web/src/pages/HomePage/HomePage.js
-
-// Delete ME LATER
-
-const TEST_QUERY = gql`
-  query {
-    __typename
-  }
-`
-// DELETE ME LATER
 
 const HomePage = () => {
   return (
@@ -43,16 +30,6 @@ const HomePage = () => {
       {/* <h1>
         <img src="/images/LegalBitchLogo.png" alt="logo" className="logo" />
       </h1> */}
-      {/* DELETE ME LATER */}
-      const {(data, loading, error)} = useQuery(TEST_QUERY) if (loading) return{' '}
-      <p>Loading...</p>
-      if (error) return <p>Error: {error.message}</p>
-      return (
-      <div>
-        <h1>Welcome</h1>
-        <p>GraphQL says: {data.__typename}</p>
-      </div>
-      ) {/* DELETE ME LATER */}
       <nav className="topnav">
         <div className="nav-logo">
           <img src="/images/LegalBitchLogo.png" alt="Your Logo" />
@@ -129,7 +106,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       <h1>Major Practice Areas:</h1>
+
       <div className="staggered-container">
         <div className="staggered-card">
           <img src="/images/ProtesterDefense.png" alt="Protester Defense" />
@@ -179,9 +158,11 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       <div style={{ height: '500px', overflow: 'hidden' }}>
         <BackgroundHexagon />
       </div>
+
       <div
         className="page-footer"
         style={{ backgroundColor: 'rgb(166, 200, 194)' }}
@@ -189,6 +170,7 @@ const HomePage = () => {
         © 2025 Luna Thomas, LLC. Special thanks to Mischa Hof for providing the
         rights to the “Witched” font.
       </div>
+
       {/* <div className="Box">
         <LegalBitch1 />
       </div> */}
